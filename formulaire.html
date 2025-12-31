@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Form</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Your details</legend>
+            
+            <p>
+                1. Name <input type="text" placeholder="First and last name" aria-label="Name">
+            </p>
+            <p>
+                2. Email <input type="email" placeholder="example@domain.com" aria-label="Email">
+            </p>
+            <p>
+                3. Phone <input type="text" placeholder="Eg. +447500000000" aria-label="Phone">
+            </p>
+        </fieldset>
+
+        <hr> <fieldset>
+            <legend>Delivery address</legend>
+            
+            <p>
+                1. Address <br> 
+                <textarea rows="4" cols="30" aria-label="Address"></textarea>
+            </p>
+            <p>
+                2. Post code <input type="text" aria-label="Post code">
+            </p>
+            <p>
+                3. Country <input type="text" aria-label="Country">
+            </p>
+        </fieldset>
+
+        <hr> <fieldset>
+            <legend>Card details</legend>
+            
+            <p>
+                1. Card type
+                <br>
+                <ol>
+                    <li>
+                        <input type="radio" id="visa" name="card_type" value="VISA">
+                        <label for="visa">VISA</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="amex" name="card_type" value="AmEx">
+                        <label for="amex">AmEx</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="mastercard" name="card_type" value="Mastercard">
+                        <label for="mastercard">Mastercard</label>
+                    </li>
+                </ol>
+            </p>
+        
+        </fieldset>
+        <button type="submit">Envoyer</button>
+            
+            <button type="reset">Annuler</button>
+    </form>
+
+</body>
+</html>
